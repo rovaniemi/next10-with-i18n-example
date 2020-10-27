@@ -37,11 +37,4 @@ export async function getStaticProps(context) {
   };
 }
 
-export async function getStaticPaths() {
-  return {
-    paths: languages.map((l) => ({ params: { lng: l } })),
-    fallback: false,
-  };
-}
-
 export default HomePage;
